@@ -8,6 +8,7 @@ import {
 import { useEffect, useState } from "react";
 import "./App.css";
 import InfoBox from "./InfoBox";
+import LineGraph from "./LineGraph";
 import Map from "./Map";
 import Table from "./Table";
 import { sortData } from "./util";
@@ -114,6 +115,7 @@ function App() {
           <Table countries={tableData} />
           <h3>Worldwide new Cases</h3>
           {/* Graph */}
+          <LineGraph/>
         </CardContent>
       </Card>
     </div>
